@@ -1,80 +1,103 @@
 /* Reset some default browser styles */
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Set up basic typography */
 body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333; /* Default text color */
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Default text color */
 }
 
 /* Header styles */
 header {
-    background-color: #007bff; /* Header background color */
-    padding: 20px;
-    text-align: center;
-    color: white; /* Header text color */
+  background-color: #007bff; /* Header background color */
+  padding: 20px;
+  text-align: center;
+  color: white; /* Header text color */
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 /* Navigation styles */
 nav {
-    display: flex; /* Use flexbox for navigation */
-    justify-content: center; /* Center align navigation items */
-    margin-top: 20px;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+/* small view navigation */
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+#menu::before {
+  content: "☰";
 }
 
-nav ul li {
-    margin-right: 20px;
+#menu.open::before {
+  content: "❎";
 }
 
-nav ul li:last-child {
-    margin-right: 0; /* Remove margin from last navigation item */
+.nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
 }
 
-nav ul li a {
-    color: white; /* Link text color */
-    text-decoration: none;
+.nav a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.nav a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
 }
 
-nav ul li a:hover {
-    text-decoration: underline; /* Hover effect */
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+  display: block;
+}
+
+.active::before {
+  content: "📍"; /* just a wayfinding symbol for the user */
 }
 
 /* Main content styles */
 main {
-    max-width: 800px; /* Limiting main content width */
-    margin: 0 auto; /* Centering main content horizontally */
-    padding: 20px;
+  max-width: 800px; /* Limiting main content width */
+  margin: 0 auto; /* Centering main content horizontally */
+  padding: 20px;
 }
 
 .card {
-    background-color: #f9f9f9; /* Card background color */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+  background-color: #f9f9f9; /* Card background color */
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* Footer styles */
 footer {
-    background-color: #007bff; /* Footer background color */
-    padding: 20px;
-    text-align: center;
-    color: white; /* Footer text color */
+  background-color: #007bff; /* Footer background color */
+  padding: 20px;
+  text-align: center;
+  color: white; /* Footer text color */
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }

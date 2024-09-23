@@ -1,59 +1,58 @@
+@media (min-width: 37.5em) {
+  * {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  img {
+    height: auto;
+    width: 250px;
+    padding: 25px;
+  }
+  header {
+    background-color: teal;
+    text-align: center;
+  }
+  #menu {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: large;
+    width: 100%;
+  }
+  main > div {
+    display: flex;
+  }
+  nav {
+    font-weight: 700;
+    background-color: teal;
+    text-align: center;
+    padding: 2rem;
+  }
+  .nav a {
+    display: inline-block;
+  }
+  .card {
+    column-span: 1;
+  }
+  nav.hover {
+    background-color: blueviolet;
 
-@media (min-width: 37.5em){
-
-    *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    img {
-        height: auto;
-        width: 250px;
-        padding: 25px;
-    }
-    header{
-        background-color: teal;
-        text-align: center;
-
-    }
-    #menu {
-        display:none;
-    
-    }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        text-align: left;
-        font-size: large;
-        
-    }
-    nav {
-        font-weight: 700;
-        background-color: teal;
-        text-align: center;
-        padding: 2rem;
-    }
-    .navigation a {
-        display:inline-block;
-    }
-    .card{
-        column-span: 1;
-    }
-    nav.hover{
-        background-color: blueviolet;
-        
-        border:color(from color srgb r g b);
-    }
-    .overlay {
-        position: absolute;
-        top: 3rem;
-        left: 10rem; 
-        padding: 1.5rem;
-        font-size: 5rem;
-
-    
-    }
-    #courseWork {
-        grid-column: 1 / 2;
-        grid-row: 1 / 3;
-        
-    }
-    }
+    border: color(from color srgb r g b);
+  }
+  .overlay {
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    padding: 1.5rem;
+    font-size: 5rem;
+  }
+  #courseWork {
+    flex: 2;
+  }
+  #place {
+    flex: 1;
+  }
+}

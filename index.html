@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Johnathan Babb's course home page">
-    <meta name="author" content="Johnathan Babb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Johnathan Babb's course home page" />
+    <meta name="author" content="Johnathan Babb" />
     <title>Course Home Page</title>
     <script src="scripts/getDate.js" defer></script>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-</head>
-<body>
+    <script src="scripts/hamMenu.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
     <header>
-        <h1>Johnathan Babb's Course Home page</h1>
-    </header>
-    <nav>
+      <h1>Johnathan Babb's Course Home page</h1>
+      <button id="menu"></button>
+      <nav class="nav">
         <ul>
-            <a href="#home">Home</a>
-            <a href="#chamber">Chamber Site</a>
-            <a href="#github">Git Hub</a>
-            <a href="#linkedin">LinkedIn Profile</a>
+          <a href="#home">Home</a>
+          <a href="#chamber">Chamber Site</a>
+          <a href="#github">Git Hub</a>
+          <a href="#linkedin">LinkedIn Profile</a>
         </ul>
-    </nav>
+      </nav>
+    </header>
     <main>
+      <div>
         <section id="courseWork">
-            <h2>Course Work</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+          <h2>Course Work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </section>
         <section id="place">
-            <h2>Place?</h2>
+          <h2>Place</h2>
         </section>
-        <section id="certs">
-            <h2>Web Dev Certs?</h2>
-        </section>
+      </div>
+      <section id="certs">
+        <h2>Web Dev Certs</h2>
+        <span id="credits"></span>
+      </section>
     </main>
     <footer>
-        <p> &copy; <span id="getDate">####</span> Johantahn Babb, US</p>
-        <p id="lastModified">Populated with javascript</p>
+      <p>&copy; <span id="getDate">####</span> Johantahn Babb, US</p>
+      <p id="lastModified">Populated with javascript</p>
     </footer>
-</body>
+  </body>
+  <script src="scripts/courseListArray.js"></script>
 </html>
