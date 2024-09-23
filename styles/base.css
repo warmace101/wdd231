@@ -1,0 +1,80 @@
+/* Reset some default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up basic typography */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Default text color */
+}
+
+/* Header styles */
+header {
+    background-color: #007bff; /* Header background color */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Header text color */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex; /* Use flexbox for navigation */
+    justify-content: center; /* Center align navigation items */
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last navigation item */
+}
+
+nav ul li a {
+    color: white; /* Link text color */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Hover effect */
+}
+
+/* Main content styles */
+main {
+    max-width: 800px; /* Limiting main content width */
+    margin: 0 auto; /* Centering main content horizontally */
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9; /* Card background color */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff; /* Footer background color */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Footer text color */
+}
+
+footer p {
+    margin: 0;
+}
