@@ -1,0 +1,40 @@
+[
+  {
+    "familyName": "Babb",
+    "moveInDate": "2008-08-21",
+    "numberOfPeople": 6,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Ben Babb",
+        "gender": "Male",
+        "birthdate": "1976-06-22"
+      },
+      {
+        "name": "Mandy Babb",
+        "gender": "Female",
+        "birthdate": "1976-01-05"
+      },
+      {
+        "name": "Ben Babb",
+        "gender": "Male",
+        "birthdate": "1998-6-29"
+      },
+      {
+        "name": "Johnathan Babb",
+        "gender": "Male",
+        "birthdate": "2000-11-29"
+      },
+      {
+        "name": "Sam Babb",
+        "gender": "Male",
+        "birthdate": "2003-09-09"
+      },
+      {
+        "name": "Josh Babb",
+        "gender": "Male",
+        "birthdate": "2006-03-06"
+      }
+    ]
+  }
+]
