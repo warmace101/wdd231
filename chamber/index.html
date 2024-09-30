@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/chamberIcon.ico" />
+    <meta
+      name="description"
+      content="WDD-231-Web Frontend Development, Johnathan Babb, course assignment portal"
+    />
+    <meta name="author" content="John Babb" />
+    <meta property="og:title" content="Assignment Page for Johnathan Babb" />
+    <meta property="og:type" content="website" />
+    <meta property="image" content="" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <title>Preston Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <div class="containter">
+        <h1>Welcome to Our Chamber of Commerce</h1>
+        <button class="hamburger">&#9776;</button>
+      </div>
+    </header>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+    <picture>
+      <source
+        media="(max-width:400px)"
+        srcset="images/center-street-small.webp"
+      />
+      <source
+        media="(max-width:960px)"
+        srcset="images/center-street-medium.webp"
+      />
+      <img
+        src="images/center-street-large.webp"
+        alt="Center Street"
+        style="width: auto"
+      />
+    </picture>
+
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Welcome to the Chamber of Commerce! We are dedicated to promoting local
+        businesses and fostering economic growth in our community.
+      </p>
+    </section>
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <!--Weather info displayed here (Use javascript here to add the info probably)-->
+    </section>
+    <section>
+      <h2>Membership</h2>
+      <p>
+        Become a member today and enjoy exclusive benefits, networking
+        opportunities, and access to resources that can help your business
+        thrive.
+      </p>
+    </section>
+    <section>
+      <h2>Events</h2>
+      <p>
+        Check out our upcoming events where you can connect with other members,
+        learn from industry experts, and stay informed about the latest trends.
+      </p>
+    </section>
+    <button id="openFooterBtn" class="open-footer-btn">Open Footer</button>
+    <footer>
+      <section>
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get involved? Contact us today!</p>
+        <p>Email: info@chamberofcommerce.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </section>
+      <p>
+        &copy; 2024 Chamber of Commerce. All rights reserved. | Web Front-End
+        Development | Johnathan Babb
+      </p>
+      <button id="closeFooterBtn" class="close-footer-btn">Close Footer</button>
+    </footer>
+    <script src="scripts/footerToggle.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+  </body>
+</html>

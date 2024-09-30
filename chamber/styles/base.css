@@ -1,0 +1,129 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #666;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main section styles */
+section {
+  padding: 20px;
+}
+
+/* Weather section styles */
+.weather {
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer section {
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none; /* Hide the navigation by default on small screens */
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 10px 0; /* Reduce header padding on small screens */
+  }
+
+  footer {
+    max-height: 0; /* Initially hide the footer */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Add a smooth transition effect */
+  }
+
+  footer.active {
+    max-height: 500px; /* Adjust the max-height value based on your content */
+  }
+
+  footer section {
+    margin-bottom: 10px;
+  }
+
+  .toggle-footer {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  #openFooterBtn {
+    display: block;
+  }
+  #closeFooterBtn {
+    display: block;
+  }
+}
