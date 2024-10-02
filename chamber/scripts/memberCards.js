@@ -5,7 +5,7 @@ let isGridView = true;
 // Fetch member data
 async function fetchMembers() {
   try {
-    const response = await fetch("chamber/scripts/members.json");
+    const response = await fetch("scripts/members.json");
     const members = await response.json();
     displayMembers(members);
   } catch (error) {
