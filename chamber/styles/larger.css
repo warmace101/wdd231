@@ -82,3 +82,34 @@ img {
 #closeFooterBtn {
   display: none;
 }
+body {
+  font-family: Arial, sans-serif;
+}
+
+#membersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid-view {
+  flex-direction: row;
+}
+
+.list-view {
+  flex-direction: column;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(33% - 20px); /* 3 cards per row */
+}
+
+.member-list-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

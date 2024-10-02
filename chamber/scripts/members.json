@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Polar Bear",
+    "address": "On the highway somewhere",
+    "phone_number": "123456789",
+    "website_url": "something somewhere blah blah",
+    "image": "logo of a white ass bear",
+    "membership_level": "hamburger"
+  },
+  {
+    "name": "Big J's",
+    "address": "On mainstreet",
+    "phone_number": "123456789",
+    "website_url": "I don't think they have one",
+    "membership_level": "shakes"
+  },
+  {
+    "name": "Worm Creek Opera House",
+    "address": "On mainstreet",
+    "phone_number": "123456789",
+    "website": "blah blah",
+    "membership_level": "popcorn"
+  },
+  {
+    "name": "Island Bowl Grill",
+    "address": "On the highway somewhere",
+    "phone_number": "123456789",
+    "website": "blah blah",
+    "membership_level": "Good stuff"
+  },
+  {
+    "name": "Stokes",
+    "address": "Main street",
+    "phone_number": "123456789",
+    "website": "blah blah",
+    "membership_level": "The only grocery store in town"
+  },
+  {
+    "name": "O'Reily's Auto Parts",
+    "address": "Somewher on main street",
+    "phone_number": "123456789",
+    "webstie": "blah blah",
+    "membership_level": "Blinker Fluid"
+  },
+  {
+    "name": "Swainston Mill and Cabinet",
+    "address": "On the north side of town",
+    "phone_number": "123456789",
+    "webstie": "idk ask curtis",
+    "membership_level": "Cabinets"
+  }
+]

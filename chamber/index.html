@@ -12,6 +12,7 @@
     <meta property="og:title" content="Assignment Page for Johnathan Babb" />
     <meta property="og:type" content="website" />
     <meta property="image" content="" />
+    <script src="scripts/getDate.js" defer></script>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
@@ -57,21 +58,14 @@
       <h2>Local Weather</h2>
       <!--Weather info displayed here (Use javascript here to add the info probably)-->
     </section>
+    <!--Member Section-->
     <section>
-      <h2>Membership</h2>
-      <p>
-        Become a member today and enjoy exclusive benefits, networking
-        opportunities, and access to resources that can help your business
-        thrive.
-      </p>
+      <h1>Chamber Members</h1>
+      <button id="toggleView">Toggle View</button>
+      <div id="membersContainer" class="grid-view"></div>
+      <script src="scripts/memberCards.js"></script>
     </section>
-    <section>
-      <h2>Events</h2>
-      <p>
-        Check out our upcoming events where you can connect with other members,
-        learn from industry experts, and stay informed about the latest trends.
-      </p>
-    </section>
+    <div id="memberContainer" class="grid"></div>
     <button id="openFooterBtn" class="open-footer-btn">Open Footer</button>
     <footer>
       <section>
