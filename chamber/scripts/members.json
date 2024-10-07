@@ -4,7 +4,7 @@
     "address": "On the highway somewhere",
     "phone_number": "123456789",
     "website_url": "something somewhere blah blah",
-    "image": "logo of a white ass bear",
+    "image": "images/polarBear.png",
     "membership_level": "hamburger"
   },
   {
@@ -12,6 +12,7 @@
     "address": "On mainstreet",
     "phone_number": "123456789",
     "website_url": "I don't think they have one",
+    "image": "images/bigJ.png",
     "membership_level": "shakes"
   },
   {
@@ -19,6 +20,7 @@
     "address": "On mainstreet",
     "phone_number": "123456789",
     "website": "blah blah",
+    "image": "images/wormCreek.jpg",
     "membership_level": "popcorn"
   },
   {
@@ -26,6 +28,7 @@
     "address": "On the highway somewhere",
     "phone_number": "123456789",
     "website": "blah blah",
+    "image": "images/islandBowl.jpg",
     "membership_level": "Good stuff"
   },
   {
@@ -33,6 +36,7 @@
     "address": "Main street",
     "phone_number": "123456789",
     "website": "blah blah",
+    "image": "images/stokes.jpg",
     "membership_level": "The only grocery store in town"
   },
   {
@@ -40,6 +44,7 @@
     "address": "Somewher on main street",
     "phone_number": "123456789",
     "webstie": "blah blah",
+    "image": "images/oreilly.png",
     "membership_level": "Blinker Fluid"
   },
   {
@@ -47,6 +52,7 @@
     "address": "On the north side of town",
     "phone_number": "123456789",
     "webstie": "idk ask curtis",
+    "image": "images/millAndCabinet.jpg",
     "membership_level": "Cabinets"
   }
 ]

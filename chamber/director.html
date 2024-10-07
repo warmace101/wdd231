@@ -31,40 +31,23 @@
       <a href="directory.html">Directory</a>
       <a href="join.html">Join</a>
     </nav>
-    <picture>
-      <source
-        media="(max-width:400px)"
-        srcset="images/preston_hero_small.webp"
-      />
-      <source
-        media="(max-width:960px)"
-        srcset="images/preston_hero_medium.webp"
-      />
-      <img
-        src="images/preston_hero_large.webp"
-        alt="Center Street"
-        style="width: auto"
-      />
-    </picture>
 
+    <!--Member Section-->
     <section>
-      <h2>About Us</h2>
-      <p>
-        Welcome to the Chamber of Commerce! We are dedicated to promoting local
-        businesses and fostering economic growth in our community.
-      </p>
+      <h1>Chamber Members</h1>
+      <button id="toggleView">Toggle View</button>
+      <div id="membersContainer" class="grid-view"></div>
+      <script src="scripts/memberCards.js"></script>
     </section>
-    <section class="weather">
-      <h2>Local Weather</h2>
-      <!--Weather info displayed here (Use javascript here to add the info probably)-->
-    </section>
-      <p>
-        &copy; 2024 Chamber of Commerce. All rights reserved. | Web Front-End
-        Development | Johnathan Babb
-      </p>
-      <button id="closeFooterBtn" class="close-footer-btn">Close Footer</button>
+    <div id="memberContainer" class="grid"></div>
+    <button id="openFooterBtn" class="open-footer-btn">Open Footer</button>
+    <footer>
+      <section>
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get involved? Contact us today!</p>
+        <p>Email: info@chamberofcommerce.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </section>
     </footer>
-    <script src="scripts/footerToggle.js"></script>
-    <script src="scripts/hamburgerMenu.js"></script>
   </body>
 </html>
