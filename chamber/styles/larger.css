@@ -13,7 +13,7 @@ body {
 
 /* Header styles */
 header {
-  background-color:  ;
+  background-color: midnightblue;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -21,13 +21,13 @@ header {
 
 /* Navigation styles */
 nav {
-  background-color: #666;
+  background-color: maroon;
   padding: 10px 0;
   text-align: center;
 }
 
 nav a {
-  color: #fff;
+  color: lightblue;
   text-decoration: none;
   margin: 0 10px;
 }
@@ -44,7 +44,8 @@ section {
 
 /* Footer styles */
 footer {
-  background-color: #333;
+  text-align: center;
+  background-color: midnightblue;
   color: #fff;
   text-align: center;
   padding: 20px 0;
