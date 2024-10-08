@@ -5,7 +5,7 @@
     "phone_number": "123456789",
     "website_url": "something somewhere blah blah",
     "image": "images/polarBear.png",
-    "membership_level": "hamburger"
+    "membership_level": "1"
   },
   {
     "name": "Big J's",
@@ -13,7 +13,7 @@
     "phone_number": "123456789",
     "website_url": "I don't think they have one",
     "image": "images/bigJ.png",
-    "membership_level": "shakes"
+    "membership_level": "2"
   },
   {
     "name": "Worm Creek Opera House",
@@ -21,7 +21,7 @@
     "phone_number": "123456789",
     "website": "blah blah",
     "image": "images/wormCreek.jpg",
-    "membership_level": "popcorn"
+    "membership_level": "1"
   },
   {
     "name": "Island Bowl Grill",
@@ -29,7 +29,7 @@
     "phone_number": "123456789",
     "website": "blah blah",
     "image": "images/islandBowl.jpg",
-    "membership_level": "Good stuff"
+    "membership_level": "1"
   },
   {
     "name": "Stokes",
@@ -37,7 +37,7 @@
     "phone_number": "123456789",
     "website": "blah blah",
     "image": "images/stokes.jpg",
-    "membership_level": "The only grocery store in town"
+    "membership_level": "3"
   },
   {
     "name": "O'Reily's Auto Parts",
@@ -45,7 +45,7 @@
     "phone_number": "123456789",
     "webstie": "blah blah",
     "image": "images/oreilly.png",
-    "membership_level": "Blinker Fluid"
+    "membership_level": "3"
   },
   {
     "name": "Swainston Mill and Cabinet",
@@ -53,6 +53,6 @@
     "phone_number": "123456789",
     "webstie": "idk ask curtis",
     "image": "images/millAndCabinet.jpg",
-    "membership_level": "Cabinets"
+    "membership_level": "2"
   }
 ]
