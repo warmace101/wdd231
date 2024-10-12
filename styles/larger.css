@@ -54,5 +54,6 @@
   }
   #place {
     flex: 1;
+    border-style: solid;
   }
 }

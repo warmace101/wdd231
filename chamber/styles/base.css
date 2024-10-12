@@ -52,8 +52,13 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  display: flex;
+  width: auto;
 }
-
+footer p {
+  display: flex;
+  word-wrap: normal;
+}
 footer section {
   margin-bottom: 20px;
 }
@@ -82,27 +87,23 @@ img {
   }
 
   footer {
-    max-height: 0; /* Initially hide the footer */
-    overflow: hidden;
-    transition: max-height 0.3s ease-out; /* Add a smooth transition effect */
+    display: flex;
   }
 
-  footer.active {
+  /* footer.active {
     max-height: 500px; /* Adjust the max-height value based on your content */
-  }
 
   footer section {
     margin-bottom: 10px;
   }
-
-  .toggle-footer {
+  /* .toggle-footer {
     display: block;
     text-align: center;
     margin-bottom: 10px;
     cursor: pointer;
     color: #fff;
     text-decoration: underline;
-  }
+  } */
 
   .nav-menu {
     display: none;
@@ -124,10 +125,10 @@ img {
   .hamburger {
     display: block;
   }
-  #openFooterBtn {
+  /* #openFooterBtn {
     display: block;
   }
   #closeFooterBtn {
     display: block;
-  }
+  } */
 }

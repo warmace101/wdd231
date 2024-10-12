@@ -37,17 +37,12 @@ section {
   padding: 20px;
 }
 
-/* Weather section styles */
-.weather {
-  text-align: center;
-}
-
 /* Footer styles */
 footer {
+  display: flex;
   text-align: center;
   background-color: midnightblue;
   color: #fff;
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -55,6 +50,14 @@ footer section {
   margin-bottom: 20px;
 }
 
+footer p {
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
 /* Image styles */
 img {
   display: block;
@@ -113,4 +116,28 @@ body {
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+main > div {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+#events {
+  height: 300px;
+  flex-direction: 2;
+}
+/* Weather section styles */
+#weather {
+  flex: 1;
+}
+#forecast {
+  flex: 2;
+}
+
+main .companies {
+  text-align: center;
 }
