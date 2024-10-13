@@ -39,5 +39,3 @@ toggleViewButton.addEventListener("click", () => {
   fetchMembers(); // Re-fetch to apply the view
 });
 
-// Initial fetch
-fetchMembers();
