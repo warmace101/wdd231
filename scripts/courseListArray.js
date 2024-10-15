@@ -67,11 +67,28 @@ const courses = [
   },
 ];
 const credits = document.getElementById("credits");
+const popUpInfo = document.querySelector("dialog");
 
 for (const course of courses) {
   const node = document.createTextNode(`${course.subject} ${course.number}`); //.innerHTML = `${course.subject} ${course.number}`);
-  const div = document.createElement("div");
-  div.appendChild(node);
-  credits.appendChild(div);
+  const courseButton = document.createElement("button");
+  courseButton.appendChild(node);
+  credits.appendChild(courseButton);
 }
-9
+courseButton.addEventListener("click", () => {
+  const info =
+    document.createTextNode(`${course.title} ${course.subject} ${course.number},
+ ${course.description}`);
+  popUpInfo.appendChild(info);
+});
+
+showButton.addEventListener("click", () => {
+  dialog.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
+
+const showButton = document.querySelector("dialog + button");
+const closeButton = document.querySelector("dialog button");
