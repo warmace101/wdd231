@@ -74,4 +74,3 @@ for (const course of courses) {
   div.appendChild(node);
   credits.appendChild(div);
 }
-9

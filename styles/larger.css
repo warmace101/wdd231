@@ -50,10 +50,23 @@
     font-size: 5rem;
   }
   #courseWork {
+    border-style: solid;
     flex: 2;
+    margin-right: 25px;
   }
   #place {
     flex: 1;
     border-style: solid;
+  }
+  #certs {
+    text-align: center;
+    display: inline-block;
+  }
+
+  #credits > div {
+    border-style: solid;
+    display: inline-block;
+    margin: 25px;
+    padding: 25px;
   }
 }
