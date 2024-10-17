@@ -81,6 +81,8 @@ courseButton.addEventListener("click", () => {
  ${course.description}`);
   popUpInfo.appendChild(info);
 });
+const showButton = document.querySelector("dialog" + "button");
+const closeButton = document.querySelector("dialog button");
 
 showButton.addEventListener("click", () => {
   dialog.showModal();
@@ -89,6 +91,3 @@ showButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   dialog.close();
 });
-
-const showButton = document.querySelector("dialog + button");
-const closeButton = document.querySelector("dialog button");

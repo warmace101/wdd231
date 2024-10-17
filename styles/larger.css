@@ -68,4 +68,15 @@
     display: inline-block;
     padding: 25px;
   }
+  dialog {
+    display: flex;
+    padding: 25px;
+  }
+  dialog > button {
+    margin-left: 25px;
+  }
+  footer {
+    margin: 10%;
+    max-width: 100%;
+  }
 }
