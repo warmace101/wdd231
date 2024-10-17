@@ -66,6 +66,9 @@ const courses = [
     completed: false,
   },
 ];
+
+// Modal script
+
 const credits = document.getElementById("credits");
 const popUpInfo = document.querySelector("dialog");
 
@@ -73,19 +76,30 @@ for (const course of courses) {
   const node = document.createTextNode(`${course.subject} ${course.number}`); //.innerHTML = `${course.subject} ${course.number}`);
   const courseButton = document.createElement("button");
   courseButton.appendChild(node);
+  // courseButton.addEventListener("click", ()=>
+
+  // )
   credits.appendChild(courseButton);
+  courseButton.addEventListener("click", () => {
+    const info =
+      document.createTextNode(`${course.title} ${course.subject} ${course.number},
+   ${course.description}`);
+    popUpInfo.appendChild(info);
+  });
 }
-courseButton.addEventListener("click", () => {
-  const info =
-    document.createTextNode(`${course.title} ${course.subject} ${course.number},
- ${course.description}`);
-  popUpInfo.appendChild(info);
-});
-const showButton = document.querySelector("dialog" + "button");
-const closeButton = document.querySelector("dialog button");
+
+// courseButton.addEventListener("click", () => {
+//   const info =
+//     document.createTextNode(`${course.title} ${course.subject} ${course.number},
+//  ${course.description}`);
+//   popUpInfo.appendChild(info);
+// });
+
+// const showButton = document.querySelector("dialog button");
+// const closeButton = document.querySelector("dialog button");
 
 showButton.addEventListener("click", () => {
-  dialog.showModal();
+  credits.showModal();
 });
 
 closeButton.addEventListener("click", () => {
