@@ -69,39 +69,52 @@ const courses = [
 
 // Modal script
 
+// const credits = document.getElementById("credits");
+// const popUpInfo = document.querySelector("dialog");
+
+//  for (const course of courses) {
+//    const node = document.createTextNode(`${course.subject} ${course.number}`); //.innerHTML = `${course.subject} ${course.number}`);
+//    const courseButton = document.createElement("button");
+//    courseButton.appendChild(node);
+//    credits.appendChild(courseButton);
+//    courseButton.addEventListener("click", () => {
+//      const info =
+//        document.createTextNode(`${course.title} ${course.subject} ${course.number},
+//     ${course.description}`);
+//      popUpInfo.appendChild(info);
+//  }
+
 const credits = document.getElementById("credits");
-const popUpInfo = document.querySelector("dialog");
+const popUpInfo = document.querySelector("#course-details");
 
 for (const course of courses) {
-  const node = document.createTextNode(`${course.subject} ${course.number}`); //.innerHTML = `${course.subject} ${course.number}`);
-  const courseButton = document.createElement("button");
+  const node = document.createTextNode(`${course.subject} ${course.number}`);
+  const courseButton = document.createElement("div");
   courseButton.appendChild(node);
-  // courseButton.addEventListener("click", ()=>
-
-  // )
-  credits.appendChild(courseButton);
-  courseButton.addEventListener("click", () => {
-    const info =
-      document.createTextNode(`${course.title} ${course.subject} ${course.number},
-   ${course.description}`);
-    popUpInfo.appendChild(info);
-  });
+  popUpInfo.appendChild(courseButton);
 }
 
-// courseButton.addEventListener("click", () => {
-//   const info =
-//     document.createTextNode(`${course.title} ${course.subject} ${course.number},
-//  ${course.description}`);
-//   popUpInfo.appendChild(info);
-// });
+// Modal script second attempt
 
-// const showButton = document.querySelector("dialog button");
-// const closeButton = document.querySelector("dialog button");
+let closeModal = document.querySelector("#closeModal");
 
-showButton.addEventListener("click", () => {
-  credits.showModal();
-});
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+  <button id="closeModal">&times;</buttons>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p>${course.description}</p>
+  <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+  course.showModal();
 
-closeButton.addEventListener("click", () => {
-  dialog.close();
-});
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+
+    courseDiv.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+  });
+}

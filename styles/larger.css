@@ -69,14 +69,42 @@
     padding: 25px;
   }
   dialog {
-    display: flex;
-    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
   }
-  dialog > button {
-    margin-left: 25px;
+
+  ::backdrop {
+    background-attachment: rgba(0, 0, 0, 0.5);
   }
+
+  dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
   footer {
     margin: 10%;
     max-width: 100%;
+  }
+  .member-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
   }
 }
