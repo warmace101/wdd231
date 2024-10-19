@@ -14,6 +14,7 @@
     <meta property="image" content="" />
     <script src="scripts/getDate.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
@@ -32,3 +33,164 @@
       <a href="directory.html">Directory</a>
       <a href="join.html">Join</a>
     </nav>
+    <body>
+      <main>
+        <h2>Join Us</h2>
+        <form method="get" action="thankyou.html">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            title="Enter your first name"
+            required
+            autocomplete="given-name"
+          />
+
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            title="Enter your last name"
+            required
+            autocomplete="family-name"
+          />
+
+          <label for="orgTitle">Organizational Title:</label>
+          <input
+            type="text"
+            id="orgTitle"
+            name="orgTitle"
+            title="Enter your organizational title"
+            pattern="[A-Za-z\s-]{7,}"
+            autocomplete="organization-title"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            title="Enter your email address"
+            required
+            autocomplete="email"
+            placeholder="example@example.com"
+          />
+
+          <label for="phone">Mobile Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            title="Enter your mobile phone number"
+            required
+            autocomplete="tel"
+          />
+
+          <label for="orgName">Business/Organization Name:</label>
+          <input
+            type="text"
+            id="orgName"
+            name="orgName"
+            title="Enter your business name"
+            required
+            autocomplete="organization"
+          />
+
+          <label for="membershipLevel">Membership Level:</label>
+          <select id="membershipLevel" name="membershipLevel">
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+
+          <label for="description">Business/Organization Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            title="Describe your business"
+          ></textarea>
+
+          <input
+            type="hidden"
+            id="timestamp"
+            name="timestamp"
+            value="${new Date().toISOString()}"
+          />
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="membership-cards">
+          <div class="card" id="npMembershipCard">
+            <h3>NP Membership</h3>
+            <p>No fee for non-profit organizations.</p>
+            <a href="#" class="modal-trigger" data-modal="npModal"
+              >Learn More</a
+            >
+          </div>
+          <div class="card" id="bronzeMembershipCard">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits for small businesses.</p>
+            <a href="#" class="modal-trigger" data-modal="bronzeModal"
+              >Learn More</a
+            >
+          </div>
+          <div class="card" id="silverMembershipCard">
+            <h3>Silver Membership</h3>
+            <p>Enhanced benefits for growing businesses.</p>
+            <a href="#" class="modal-trigger" data-modal="silverModal"
+              >Learn More</a
+            >
+          </div>
+          <div class="card" id="goldMembershipCard">
+            <h3>Gold Membership</h3>
+            <p>Premium benefits for established organizations.</p>
+            <a href="#" class="modal-trigger" data-modal="goldModal"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="npModal" class="modal">
+          <div class="modal-content">
+            <span class="close" data-modal="npModal">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <p>Details about NP Membership benefits...</p>
+          </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+          <div class="modal-content">
+            <span class="close" data-modal="bronzeModal">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <p>Details about Bronze Membership benefits...</p>
+          </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+          <div class="modal-content">
+            <span class="close" data-modal="silverModal">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <p>Details about Silver Membership benefits...</p>
+          </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+          <div class="modal-content">
+            <span class="close" data-modal="goldModal">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <p>Details about Gold Membership benefits...</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Chamber of Commerce. All rights reserved.</p>
+      </footer>
+    </body>
+  </body>
+</html>
