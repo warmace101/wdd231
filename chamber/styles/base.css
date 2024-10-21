@@ -13,7 +13,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
+  background-color: midnightblue;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -21,7 +21,7 @@ header {
 
 /* Navigation styles */
 nav {
-  background-color: #666;
+  background-color: maroon;
   padding: 10px 0;
   text-align: center;
 }
@@ -48,7 +48,7 @@ section {
 
 /* Footer styles */
 footer {
-  background-color: #333;
+  background-color: midnightblue;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -119,7 +119,7 @@ img {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    color: midnightblue;
   }
 
   .hamburger {
@@ -131,4 +131,27 @@ img {
   #closeFooterBtn {
     display: block;
   } */
+  .card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 0.5s ease-out;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+  }
 }
