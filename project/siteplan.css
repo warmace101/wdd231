@@ -7,17 +7,19 @@ body {
 }
 
 header {
-  background-color: #3a5f0b;
-  color: #fff;
+  background-color: #355834;
+  color: #b7b5b3;
   padding: 20px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bebe Neue", static;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bebe Neue", static;
+  font-style: italic;
+  text-decoration: solid;
 }
 
 h1 {
@@ -26,12 +28,12 @@ h1 {
 
 h2,
 h3 {
-  color: #3a5f0b;
+  color: #006992;
 }
 
 footer {
-  background-color: #3a5f0b;
-  color: #fff;
+  background-color: #513b3c;
+  color: #b7b5b3;
   text-align: center;
   padding: 10px 0;
 }
