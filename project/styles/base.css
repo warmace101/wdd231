@@ -1,37 +1,41 @@
+/* css/styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
+/* Responsive Navigation */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+nav li {
+  display: inline-block;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+/* Mobile and Desktop Styles */
+@media (max-width: 768px) {
+  nav li {
+    display: block;
+  }
+}
+/* Mobile-first styles */
+#nav-menu {
+  display: none;
 }
 
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-    nav.active ul {
-        display: flex;
-    }
+#nav-toggle {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #nav-menu {
+    display: block;
+  }
+  #nav-toggle {
+    display: none;
+  }
 }

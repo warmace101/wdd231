@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We Stubborn Few</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Join the We Stubborn Few clan in Destiny 2!">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Join the We Stubborn Few clan in Destiny 2!"
+    />
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="We Stubborn Few" />
+    <meta
+      property="og:description"
+      content="Join the We Stubborn Few clan in Destiny 2!"
+    />
+    <meta property="og:image" content="images/preview-image.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="We Stubborn Few" />
+    <meta
+      name="twitter:description"
+      content="Join the We Stubborn Few clan in Destiny 2!"
+    />
+    <meta name="twitter:image" content="images/preview-image.jpg" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <button id="nav-toggle">Menu</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h1>Welcome to We Stubborn Few</h1>
-        <p>Your adventure in Destiny 2 starts here!</p>
-        <div id="item-list"></div>
+      <h1>Welcome to We Stubborn Few</h1>
+      <p>Your adventure in Destiny 2 starts here!</p>
+      <p>
+        If you are interested in joining this group please contact the clan
+        leader or one of the admins of the clan.
+      </p>
+      <div id="item-list">
         <div class="evets">
-            <h3>Event Section</h3>
-            <ul>
-                <li>Raid</li>
-                <li>Dungeons</li>
-                <li>Lost Sectors</li>
-            </ul>
+          <h3>Event Section</h3>
+          <ul>
+            <li>
+              Raid: Weekly Rotator is the "Deep Stone Crypt" and "Root of
+              Nightmares"
+            </li>
+            <li>
+              Dungeons: Weekly Rotator is the "Prophecy" and "Ghosts of the
+              Deep"
+            </li>
+            <li>Lost Sectors: The legendary lost sector is on Europa!</li>
+          </ul>
         </div>
+        <div class="clan-quotes">
+          <p>
+            Xur: "My body is not mine to control" John: **Lets out a loud belch
+            that the mic picked up** Daren: **Dies from laughing from
+            coincidence of this**
+          </p>
+        </div>
+        <!-- HTML Structure for Modal -->
+        <div id="modal" style="display: none">
+          <div id="modal-content">
+            <span onclick="closeModal()">Close</span>
+            <div id="modal-details"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>&copy; 2024 We Stubborn Few. All rights reserved.</p>
-        <a href="attributions.html">Attributions</a>
+      <p>&copy; 2024 We Stubborn Few. All rights reserved.</p>
+      <a href="attributions.html">Attributions</a>
     </footer>
     <script type="module" src="js/script.js"></script>
-</body>
+  </body>
 </html>
