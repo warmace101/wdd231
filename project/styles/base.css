@@ -1,41 +1,5 @@
-/* css/styles.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-/* Responsive Navigation */
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-/* Mobile and Desktop Styles */
 @media (max-width: 768px) {
-  nav li {
-    display: block;
-  }
-}
-/* Mobile-first styles */
-#nav-menu {
-  display: none;
-}
-
-#nav-toggle {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  #nav-menu {
-    display: block;
-  }
-  #nav-toggle {
-    display: none;
+  nav {
+    background-color: navy;
   }
 }
