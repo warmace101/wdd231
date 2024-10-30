@@ -10,21 +10,32 @@
   </head>
   <body>
     <header>
-      <h1>Thank You!</h1>
-      <button id="nav-toggle">Menu</button>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="project.html">Home</a></li>
-          <li><a href="form.html">Join Fireteam</a></li>
-          <li><a href="fireteam.html">Fireteams</a></li>
-        </ul>
-      </nav>
+      <h1>Thank You for Signing Up!</h1>
     </header>
     <main>
-      <h2>Thank you for signing up for a fireteam!</h2>
-      <p>Your application has been submitted successfully.</p>
-      <p>We will review your information and get back to you soon.</p>
-      <a href="project.html">Return to Home</a>
+      <p>Your submission has been received.</p>
+      <p>
+        <strong>Call Tag:</strong> <span id="display-callTag"></span><br />
+        <strong>Class:</strong> <span id="display-class"></span><br />
+        <strong>Power Level:</strong> <span id="display-powerLevel"></span
+        ><br />
+        <strong>SubClass:</strong> <span id="display-subclass"></span>
+      </p>
     </main>
+    <footer>
+      <p>&copy; 2024 We Stubborn Few. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById("display-callTag").textContent =
+        urlParams.get("callTag");
+      document.getElementById("display-class").textContent =
+        urlParams.get("class");
+      document.getElementById("display-powerLevel").textContent =
+        urlParams.get("powerLevel");
+      document.getElementById("display-subclass").textContent =
+        urlParams.get("subclass");
+    </script>
   </body>
 </html>

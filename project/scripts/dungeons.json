@@ -40,5 +40,68 @@
     "name": "Grasp of Avarice",
     "description": "Uncover the secrets of a pirate's treasure.",
     "date": "Seasonal"
+  },
+  {
+    "id": 7,
+    "type": "Raid",
+    "name": "Last Wish",
+    "description": "Defeat Riven in the Dreaming City.",
+    "date": "Weekly"
+  },
+  {
+    "id": 8,
+    "type": "Raid",
+    "name": "Garden of Salvation",
+    "description": "Journey into the Black Garden to face the Vex.",
+    "date": "Weekly"
+  },
+  {
+    "id": 9,
+    "type": "Dungeon",
+    "name": "Shattered Throne",
+    "description": "A long dungeon set in the Dreaming City.",
+    "date": "Weekly"
+  },
+  {
+    "id": 10,
+    "type": "Raid",
+    "name": "Vault of Glass",
+    "description": "The first raid in Destiny, now returning.",
+    "date": "Event Specific"
+  },
+  {
+    "id": 11,
+    "type": "Dungeon",
+    "name": "The Pit of Heresy",
+    "description": "A dungeon set in the Moon's Hellmouth.",
+    "date": "Seasonal"
+  },
+  {
+    "id": 12,
+    "type": "Raid",
+    "name": "King's Fall",
+    "description": "Face Oryx in his own Dreadnaught.",
+    "date": "Event Specific"
+  },
+  {
+    "id": 13,
+    "type": "Activity",
+    "name": "Trials of Osiris",
+    "description": "A competitive PvP event where teams fight for glory.",
+    "date": "Weekly"
+  },
+  {
+    "id": 14,
+    "type": "Activity",
+    "name": "Legendary Lost Sector",
+    "description": "Challenging PvE content with high rewards.",
+    "date": "Daily"
+  },
+  {
+    "id": 15,
+    "type": "Activity",
+    "name": "Iron Banner",
+    "description": "A special PvP event that honors Lord Saladin.",
+    "date": "Seasonal"
   }
 ]
