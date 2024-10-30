@@ -2,4 +2,8 @@
   nav {
     background-color: navy;
   }
+
+  main {
+    display: flex;
+  }
 }

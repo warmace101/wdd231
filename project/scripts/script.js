@@ -1,83 +1,66 @@
-// script.js
-export function init() {
-  loadItems();
-  setupNavToggle();
-}
+import { fetchActivities } from "./module.js";
 
-async function loadItems() {
-  try {
-    const response = await fetch("https://api.example.com/destiny-items");
-    const data = await response.json();
-    displayItems(data);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
+const itemListElement = document.getElementById("item-list");
+const modalElement = document.getElementById("modal");
+const modalDetailsElement = document.getElementById("modal-details");
+const closeModalButton = document.getElementById("close-modal");
 
-function displayItems(items) {
-  const itemList = document.getElementById("item-list");
-  items.forEach((item) => {
-    const itemDiv = document.createElement("div");
-    itemDiv.innerHTML = `
-            <h2>${item.name}</h2>
-            <button onclick="showModal('${item.id}')">Details</button>
-        `;
-    itemList.appendChild(itemDiv);
+// Function to create an item card
+function createItemCard(activity) {
+  const card = document.createElement("div");
+  card.className = "item";
+  card.innerHTML = `
+        <h3>${activity.name}</h3>
+        <p>Type: ${activity.type} | Date: ${activity.date}</p>
+        <a href="#" class="modal-link" data-id="${activity.id}">Learn More</a>
+    `;
+  itemListElement.appendChild(card);
+
+  // Event listener for modal
+  card.querySelector(".modal-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    openModal(activity);
   });
 }
 
-function showModal(itemId) {
-  // Function to show modal with item details
+// Function to open the modal
+function openModal(activity) {
+  modalDetailsElement.innerHTML = `
+        <h2>${activity.name} (${activity.type})</h2>
+        <p>${activity.description}</p>
+    `;
+  modalElement.style.display = "block";
 }
 
-function setupNavToggle() {
-  const nav = document.querySelector("nav");
-  nav.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-}
-
-init();
-
-// js/script.js
-document.getElementById("nav-toggle").addEventListener("click", () => {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
-});
-
-// js/script.js
-async function fetchEvents() {
-  try {
-    const response = await fetch("https://api.example.com/events");
-    const data = await response.json();
-    const eventContainer = document.getElementById("event-list");
-
-    data.events.slice(0, 15).forEach((event) => {
-      const eventItem = document.createElement("div");
-      eventItem.classList.add("event");
-      eventItem.innerHTML = `
-              <h4>${event.name}</h4>
-              <p>${event.description}</p>
-              <button onclick="openModal('${event.id}')">Details</button>
-          `;
-      eventContainer.appendChild(eventItem);
-    });
-  } catch (error) {
-    console.error("Error fetching events:", error);
-  }
-}
-fetchEvents();
-
-function openModal(eventId) {
-  const modal = document.getElementById("modal");
-  modal.style.display = "block";
-  document.getElementById(
-    "modal-details"
-  ).textContent = `Details for event ${eventId}`;
-}
-
+// Function to close the modal
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  modalElement.style.display = "none";
 }
-localStorage.setItem("userPreference", JSON.stringify({ theme: "dark" }));
-const preference = JSON.parse(localStorage.getItem("userPreference"));
+
+// Fetch activities and render them
+async function loadActivities() {
+  try {
+    const activities = await fetchActivities(); // Fetch activities from the module
+    activities.forEach(createItemCard); // Create cards for each activity
+    await loadDungeons(); // Load dungeons after activities
+  } catch (error) {
+    console.error("Error fetching activities:", error);
+  }
+}
+
+// Function to load dungeons from the JSON file
+async function loadDungeons() {
+  try {
+    const response = await fetch("dungeons.json");
+    const dungeons = await response.json();
+    dungeons.forEach(createItemCard); // Create cards for dungeons too
+  } catch (error) {
+    console.error("Error fetching dungeons:", error);
+  }
+}
+
+// Event listener for close modal
+closeModalButton.addEventListener("click", closeModal);
+
+// Initial load of activities
+loadActivities();

@@ -34,46 +34,26 @@
       <nav id="nav-menu">
         <ul>
           <li><a href="project.html">Home</a></li>
-          <li><a href="form.html">Join Firetaem</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="form.html">Join Fireteam</a></li>
+          <li><a href="fireteam.html">Fireteams</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Welcome to We Stubborn Few</h1>
-      <p>Your adventure in Destiny 2 starts here!</p>
-      <p>
-        If you are intersted in joining this group please contact the clan
+      <h1>Your adventure in Destiny 2 starts here!</h1>
+      <h1>
+        If you are interested in joining this group please contact the clan
         leader or one of the admins of the clan.
-      </p>
-      <div id="item-list">
-        <div class="evets">
-          <h3>Event Section</h3>
-          <ul>
-            <li>
-              <a
-                >Raid: Weekly Rotator is the "Deep Stone Crypt" and "Root of
-                Nightmares"
-              </a>
-            </li>
-            <li>
-              Dungeons: Weekly Rotator is the "Prophecy" and "Ghosts of the
-              Deep"
-            </li>
-            <li>Lost Sectors: The legendary lost sector is on Europa!</li>
-          </ul>
-        </div>
-        <div class="clan-quotes">
-          <p>
-            Xur: "My body is not mine to control" John: **Lets out a loud belch
-            that the mic picked up** Daren: **Dies from laughing from
-            coincidence of this**
-          </p>
-        </div>
-        <!-- HTML Structure for Modal -->
-        <div id="modal" style="display: none">
+      </h1>
+      <div class="container">
+        <div id="dungeon-list"></div>
+        <div id="modal-container"></div>
+
+        <div id="item-list"></div>
+        <div id="modal" class="modal" style="display: none">
           <div id="modal-content">
-            <span onclick="closeModal()">Close</span>
+            <span class="close" id="close-modal">&times;</span>
             <div id="modal-details"></div>
           </div>
         </div>
@@ -81,9 +61,9 @@
     </main>
     <footer>
       <p>&copy; 2024 We Stubborn Few. All rights reserved.</p>
-      <a href="attributions.html">Attributions</a>
     </footer>
-    <script type="module" src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/module.js"></script>
   </body>
 </html>
 

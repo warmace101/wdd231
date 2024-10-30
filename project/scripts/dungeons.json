@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "Raid",
+    "name": "Deep Stone Crypt",
+    "description": "A mysterious facility on Europa filled with secrets.",
+    "date": "Weekly"
+  },
+  {
+    "id": 2,
+    "type": "Raid",
+    "name": "Root of Nightmares",
+    "description": "A confrontation with the Nightmares.",
+    "date": "Weekly"
+  },
+  {
+    "id": 3,
+    "type": "Dungeon",
+    "name": "Prophecy",
+    "description": "A journey through a strange dimension.",
+    "date": "Weekly"
+  },
+  {
+    "id": 4,
+    "type": "Dungeon",
+    "name": "Ghosts of the Deep",
+    "description": "Explore the depths of the ocean.",
+    "date": "Weekly"
+  },
+  {
+    "id": 5,
+    "type": "Raid",
+    "name": "Vex Mythoclast",
+    "description": "A raid against the Vex on the planet Venus.",
+    "date": "Event Specific"
+  },
+  {
+    "id": 6,
+    "type": "Dungeon",
+    "name": "Grasp of Avarice",
+    "description": "Uncover the secrets of a pirate's treasure.",
+    "date": "Seasonal"
+  }
+]
